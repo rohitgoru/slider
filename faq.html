@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+
+
+<body>
+    <style>
+        /* Hide the additional questions initially */
+        .faq-content {
+            display: none;
+        }
+
+        .icon-show {
+            display: block;
+        }
+
+        .icon-hide {
+            display: block;
+        }
+    </style>
+    <section class="py-10 bg-gray-50 sm:py-16 lg:py-24">
+        <div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+            <div class="max-w-2xl mx-auto text-center">
+                <h2 class="text-3xl font-bold leading-tight text-black sm:text-4xl lg:text-5xl">
+                    Frequently Asked Questions
+                </h2>
+                <p class="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-600">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                </p>
+            </div>
+
+            <div class="max-w-3xl mx-auto mt-8 space-y-4 md:mt-16">
+                <div
+                    class="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50">
+                    <button onclick="toggleFaq(1)" type="button"
+                        class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
+                        <span class="flex text-lg font-semibold text-black">
+                            How to create an account?
+                        </span>
+
+                        <svg class="arrow1 w-6 h-6 text-gray-400 " xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+
+                    <div id="content1" class=" faq-content px-4 pb-5 sm:px-6 sm:pb-6">
+                        <p>
+                            Amet minim mollit non deserunt ullamco est sit
+                            <a href="#" title=""
+                                class="text-blue-600 transition-all duration-200 hover:underline">aliqua dolor</a>
+                            do amet sint. Velit officia consequat duis enim velit mollit.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer
+                    hover:bg-gray-50">
+                    <button onclick="toggleFaq(2)" type="button"
+                        class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
+                        <span class="flex text-lg font-semibold text-black">
+                            How can I make payment using Paypal?
+                        </span>
+
+                        <svg class="arrow2 w-6 h-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+
+                    <div id="content2" class="faq-content px-4 pb-5 sm:px-6 sm:pb-6">
+                        <p>
+                            Amet minim mollit non deserunt ullamco est sit
+                            <a href="#" title=""
+                                class="text-blue-600 transition-all duration-200 hover:underline">aliqua dolor</a>
+                            do amet sint. Velit officia consequat duis enim velit mollit.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer
+                    hover:bg-gray-50">
+                    <div class="">
+                        <button onclick="toggleFaq(3)" type="button"
+                            class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
+                            <span class="flex text-lg font-semibold text-black">
+                                Can I cancel my plan?
+                            </span>
+
+                            <svg class="arrow3 w-6 h-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+
+                        <div id="content3" class="faq-content px-4 pb-5 sm:px-6 sm:pb-6">
+                            <p>
+                                Amet minim mollit non deserunt ullamco est sit
+                                <a href="#" title=""
+                                    class="text-blue-600 transition-all duration-200 hover:underline">aliqua dolor</a>
+                                do amet sint. Velit officia consequat duis enim velit mollit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer
+                    hover:bg-gray-50">
+                    <button onclick="toggleFaq(4)" type="button"
+                        class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
+                        <span class="flex text-lg font-semibold text-black">
+                            How can I reach to support?
+                        </span>
+
+                        <svg class="arrow4 w-6 h-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+
+                    <div id="content4" class="faq-content px-4 pb-5 sm:px-6 sm:pb-6">
+                        <p>
+                            Amet minim mollit non deserunt ullamco est sit
+                            <a href="#" title=""
+                                class="text-blue-600 transition-all duration-200 hover:underline">aliqua dolor</a>
+                            do amet sint. Velit officia consequat duis enim velit mollit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="text-center text-gray-600 textbase mt-9">
+                Didn’t find the answer you are looking for?
+                <a href="#" title=""
+                    class="font-medium text-blue-600 transition-all duration-200 hover:text-blue-700 focus:text-blue-700 hover:underline">Contact
+                    our support</a>
+            </p>
+        </div>
+    </section>
+    <script>
+        function toggleFaq(faqNumber) {
+            const faqcontent = document.getElementById(`content${faqNumber}`);
+            const downarrow = document.getElementsByClassName(`arrow${faqNumber}`)[0];
+
+
+            if (faqcontent.style.display === "none" || faqcontent.style.display === "") {
+                faqcontent.style.display = "block"
+                downarrow.style.transform = "rotate(180deg)"
+                downarrow.style.transition = "0.3s"
+                faqcontent.style.background = "green"
+
+
+            } else {
+                faqcontent.style.display = "none";
+                downarrow.style.transform = ""
+            }
+
+        }
+    </script>
+</body>
+
+</html>

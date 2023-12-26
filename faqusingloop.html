@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <style>
+        .arrow {
+            rotate: 0deg;
+            transition: all 0.3s ease-in-out;
+        }
+
+
+
+        .faqcontent {
+            display: none;
+        }
+
+        .add.faqcontent {
+            display: block;
+        }
+
+
+
+        .active .arrow {
+            rotate: 180deg;
+        }
+    </style>
+    <div>
+
+        <div class="max-w-3xl mx-auto mt-8 space-y-4 md:mt-16">
+            <div
+                class="toggler transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer hover:bg-gray-50">
+                <button onclick="toggleFaq(0)" type="button"
+                    class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
+                    <span class="flex text-lg font-semibold text-black">
+                        How to create an account?
+                    </span>
+
+                    <svg class="arrow w-6 h-6 text-gray-400 " xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+
+                <div class="faqcontent px-4 pb-5 sm:px-6 sm:pb-6">
+                    <p>
+                        Amet minim mollit non deserunt ullamco est sit
+                        <a href="#" title="" class="text-blue-600 transition-all duration-200 hover:underline">aliqua
+                            dolor</a>
+                        do amet sint. Velit officia consequat duis enim velit mollit.
+                    </p>
+                </div>
+            </div>
+
+            <div class="toggler transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer
+                    hover:bg-gray-50">
+                <button onclick="toggleFaq(1)" type="button"
+                    class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
+                    <span class="flex text-lg font-semibold text-black">
+                        How can I make payment using Paypal?
+                    </span>
+
+                    <svg class="arrow w-6 h-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div class="faqcontent px-4 pb-5 sm:px-6 sm:pb-6">
+                    <p>
+                        Amet minim mollit non deserunt ullamco est sit
+                        <a href="#" title="" class="text-blue-600 transition-all duration-200 hover:underline">aliqua
+                            dolor</a>
+                        do amet sint. Velit officia consequat duis enim velit mollit.
+                    </p>
+                </div>
+            </div>
+            <div class="toggler transition-all duration-200 bg-white border border-gray-200 shadow-lg cursor-pointer
+                    hover:bg-gray-50">
+                <button onclick="toggleFaq(2)" type="button"
+                    class="flex items-center justify-between w-full px-4 py-5 sm:p-6">
+                    <span class="flex text-lg font-semibold text-black">
+                        How can I make payment using Paypal?
+                    </span>
+
+                    <svg class="arrow w-6 h-6 text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div class="faqcontent px-4 pb-5 sm:px-6 sm:pb-6">
+                    <p>
+                        Amet minim mollit non deserunt ullamco est sit
+                        <a href="#" title="" class="text-blue-600 transition-all duration-200 hover:underline">aliqua
+                            dolor</a>
+                        do amet sint. Velit officia consequat duis enim velit mollit.
+                    </p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <script>
+        const items = document.querySelectorAll(".toggler button");
+        const content = document.querySelectorAll(".faqcontent");
+        console.log(items)
+
+
+        const toggleFaq = (a) => {
+
+            items[a].classList.toggle("active");
+            content[a].classList.toggle("add");
+            // items.forEach((element, i) => {
+            //     if (i === index - 1) {
+            //         element.classList.toggle("active");
+            //     } else {
+            //         element.classList.remove("active");
+            //     }
+            // });
+
+            // content.forEach((element, i) => {
+            //     if (i === index - 1) {
+            //         element.classList.toggle("add");
+
+            //     } else {
+            //         element.classList.remove("add");
+            //     }
+            // });
+
+        };
+    </script>
+    </script>
+</body>
+
+</html>
